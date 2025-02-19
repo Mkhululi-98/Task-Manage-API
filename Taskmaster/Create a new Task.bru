@@ -1,0 +1,21 @@
+meta {
+  name: Create a new Task
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/api/tasks
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "name": "create collection",
+      "description": "Create a collecton",
+      "completed": false,
+      "dueDate": null,
+      "project": null
+    }
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Update Project
+  type: http
+  seq: 8
+}
+
+put {
+  url: http://localhost:8080/api/projects/2
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 2,
+    "name": "Build a SPA with Java spring and angular",
+    "description": null,
+    "tasks": [
+    {
+      "id": 2,
+      "name": "create collection",
+      "description": "Create a collecton",
+      "completed": false,
+      "dueDate": null
+    }
+  ]
+  }
+}
