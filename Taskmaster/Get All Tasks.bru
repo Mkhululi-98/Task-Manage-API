@@ -5,7 +5,11 @@ meta {
 }
 
 get {
-  url: htttp://localhost:8080/api/tasks
+  url: http://localhost:8080/api/tasks
   body: none
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrZXZpbkBnbWFpbDMuY29tIiwiaWF0IjoxNzQxMjk5ODUyLCJleHAiOjE3NDEzODYyNTJ9.uINmh-_l9UrrN44RWl4bbPXzGbu4a3RvWBIvlliefKI
 }
